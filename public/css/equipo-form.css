@@ -1,0 +1,86 @@
+
+/* Layout y Grid */
+.form-grid-2 { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 18px; 
+}
+
+.form-grid-3 { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 18px; 
+}
+
+/* Campos de Formulario */
+.form-label {
+    display: block; 
+    font-size: 12px; 
+    font-weight: 700; 
+    color: #52525b; 
+    margin-bottom: 6px;
+}
+
+.form-input {
+    width: 100%; 
+    padding: 11px 16px; 
+    border: 1px solid #cbd5e1; 
+    border-radius: 8px; 
+    font-size: 13px; 
+    background-color: #fff; 
+    color: #18181b;
+}
+
+.form-input-file {
+    width: 100%; 
+    font-size: 12px;
+}
+
+/* Textos de ayuda y separadores */
+.form-help-text {
+    font-size: 11px; 
+    color: #71717a; 
+    margin-top: 6px;
+}
+
+.form-divider {
+    border: none; 
+    border-top: 1px solid #f1f1f5; 
+    margin: 24px 0;
+}
+
+.form-section-title {
+    font-size: 13px; 
+    font-weight: 700; 
+    color: #18181b; 
+    margin-bottom: 14px;
+}
+
+/* Botones y Contenedor */
+.form-actions {
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 12px; 
+    margin-top: 28px; 
+    border-top: 1px solid #f1f1f5; 
+    padding-top: 20px;
+}
+
+.btn-cancelar {
+    padding: 11px 22px; 
+    border-radius: 8px; 
+    font-weight: 700; 
+    font-size: 13px; 
+    background-color: #f4f4f5; 
+    color: #18181b; 
+    text-decoration: none; 
+    display: inline-flex; 
+    align-items: center;
+}
+
+/* Adaptabilidad a dispositivos móviles */
+@media (max-width: 720px) {
+    .form-grid-2, .form-grid-3 { 
+        grid-template-columns: 1fr; 
+    }
+}
